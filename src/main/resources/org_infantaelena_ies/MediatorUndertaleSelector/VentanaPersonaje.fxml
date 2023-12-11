@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="root" prefHeight="462.0" prefWidth="712.0" styleClass="ventanaPrincipal" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org_infantaelena_ies.MediatorUndertaleSelector.Vista.ControladorPersonaje">
+   <children>
+      <Button fx:id="boton" layoutX="262.0" layoutY="477.0" mnemonicParsing="false" style="-fx-font-size: 15;" styleClass="botonUndertale" stylesheets="@style.css" text="Vote for this character!" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="24.0" />
+      <StackPane fx:id="stackPane" layoutX="371.0" layoutY="95.0" prefHeight="313.0" prefWidth="219.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <ImageView fx:id="imagen" fitHeight="293.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <styleClass>
+                  <String fx:value="botonUndertale" />
+                  <String fx:value="estiloCentrarImagenesImageView" />
+               </styleClass></ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="estiloCentrarImagenesImageView" />
+            <String fx:value="botonUndertale" />
+         </styleClass>
+      </StackPane>
+      <VBox fx:id="vBox" layoutX="14.0" layoutY="103.0" prefHeight="293.0" prefWidth="270.0">
+         <children>
+            <Label fx:id="nombre" prefHeight="21.0" prefWidth="260.0" style="-fx-font-size: 15;" styleClass="textoUndertale" stylesheets="@style.css" text="Name:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="descripcion" prefHeight="117.0" prefWidth="267.0" style="-fx-font-size: 15;" styleClass="textoUndertale" stylesheets="@style.css" text="Description:" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="residencia" prefHeight="21.0" prefWidth="264.0" style="-fx-font-size: 15;" styleClass="textoUndertale" stylesheets="@style.css" text="Residence:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="46.0" style="-fx-font-size: 15;" styleClass="textoUndertale" stylesheets="@style.css" text="Voice:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <MediaView fx:id="mediaViewVoz" fitHeight="10.0" fitWidth="200.0" preserveRatio="false" />
+            <Button fx:id="btVoz" mnemonicParsing="false" style="-fx-border-width: 2px;" styleClass="botonUndertale" stylesheets="@style.css" text="Listen">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Label prefHeight="21.0" prefWidth="265.0" style="-fx-font-size: 15;" styleClass="textoUndertale" stylesheets="@style.css" text="Song:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Label>
+            <Button fx:id="btMusica" mnemonicParsing="false" style="-fx-border-width: 2px;" styleClass="botonUndertale" stylesheets="@style.css" text="Listen" />
+            <MediaView fx:id="mediaViewSong" fitHeight="10.0" fitWidth="200.0" preserveRatio="false" />
+         </children>
+      </VBox>
+      <Label fx:id="header" alignment="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="45.0" prefWidth="349.0" style="-fx-font-size: 30;" styleClass="textoUndertale" stylesheets="@style.css" text="Your chosen character:" textAlignment="CENTER" textFill="#fff400" />
+      <ImageView fx:id="imgToby" fitHeight="163.0" fitWidth="299.0" layoutX="207.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" smooth="false" styleClass="estiloCentrarImagenes" visible="false" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="103.0" />
+      <ImageView fx:id="gifText" fitHeight="108.0" fitWidth="529.0" layoutX="92.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true" styleClass="estiloCentrarImagenes" visible="false" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="289.0" />
+   </children>
+</AnchorPane>

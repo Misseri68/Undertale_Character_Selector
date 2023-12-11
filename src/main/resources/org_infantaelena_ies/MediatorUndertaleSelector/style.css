@@ -1,0 +1,64 @@
+.ventanaPrincipal{
+    -fx-background-color: black;
+    -fx-font-family: "8bitoperator JVE Regular";
+}
+
+
+.botonUndertale{
+    -fx-background-color: black;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 5px;
+    -fx-font-family: "8bitoperator JVE Regular";
+
+}
+.textoUndertale{
+    -fx-font-family: "8bitoperator JVE Regular";
+    -fx-font-size: 50px;
+}
+
+
+@font-face {
+    -fx-font-family: "8bitoperator JVE Regular";
+    src: url("fonts/8bitoperator JVE Regular.ttf");
+}
+
+.selectorSans{
+    -fx-font-family: "Comic Sans MS";
+}
+
+.selectorPapyrus{
+    -fx-font-family: Papyrus;
+}
+
+
+.estiloCentrarImagenes {
+    -fx-alignment: center;
+    -fx-content-display: top;
+    -fx-graphic-text-gap: 0;
+    -fx-padding: 10;
+    -fx-preservative-ratio: true;
+    -fx-fit-width: 100%;
+    -fx-fit-height: 100%;
+
+}
+
+.estiloCentrarImagenesImageView {
+    -fx-alignment: center;
+    -fx-content-display: top;
+    -fx-graphic-text-gap: 0;
+    -fx-padding: 10;
+    -fx-preservative-ratio: true;
+    -fx-fit-width: 100%;
+    -fx-fit-height: 100%;
+    -fx-background-color: rgba(0, 0, 0);
+}
+
+.botonUndertale:hover{
+    -fx-border-color: yellow;
+    -fx-text-fill: yellow;
+}
+
+
+
